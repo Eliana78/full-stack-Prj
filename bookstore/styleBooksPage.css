@@ -1,0 +1,101 @@
+nav {
+  margin-bottom: 1.5rem;
+}
+.navbar li:hover {
+  border-bottom: 2px solid black;
+  font-size: larger;
+}
+
+h1 {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.wordSpan {
+  color: rgb(184, 42, 7);
+}
+.image-container {
+  padding: 0.5rem;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.row {
+  margin-bottom: 1rem;
+}
+.container {
+  margin-right: 2rem;
+}
+
+.imgGrid {
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-top: 1.3rem;
+}
+
+.search {
+  height: 30vh;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+}
+
+.searchContainerBorder {
+  border-bottom: 2px solid black;
+  height: 100%;
+}
+
+.resultSearch {
+  border-bottom: 2px solid black;
+}
+
+.btn.btn-dark.btnCategory:hover {
+  background-color: azure;
+  color: black;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.categoryContainerBorder {
+  border-bottom: 2px solid black;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+}
+
+footer .container {
+  padding: 0;
+}
+
+footer .row > div {
+  margin-bottom: 1rem;
+}
+
+footer .col-md-4 {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  footer .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .search input,
+  .search button {
+    width: 50rem;
+  }
+
+  .categoryContainerBorder {
+    height: 300px;
+  }
+
+  .btnCategory {
+    margin-top: 100px;
+  }
+}

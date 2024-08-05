@@ -1,0 +1,114 @@
+.navbar {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#homeSpan {
+  color: rgb(184, 42, 7);
+}
+
+.navbar li:hover {
+  border-bottom: 2px solid black;
+  font-size: larger;
+}
+
+.hero {
+  background-image: url("https://cdn.pixabay.com/photo/2014/11/15/15/11/take-532097_640.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+h2 {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.subheading {
+  display: inline-block;
+  margin-bottom: 0;
+  color: rgb(184, 42, 7);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+.imgAboutUs {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/02/15/09/book-2572015_640.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.pAboutUs {
+  text-align: justify;
+}
+.img-container {
+  height: 300px;
+}
+
+.contact-wrap {
+  background: #a3a2a22c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.img-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.formContainer label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.contactSpan {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.ContactSec a,
+.ContactSec p {
+  text-decoration: none;
+  color: rgb(184, 42, 7);
+}
+
+.faces {
+  height: 200px;
+  object-fit: cover;
+}
+
+.reviewsbkg {
+  padding-top: 50px;
+  background-image: url("https://cdn.pixabay.com/photo/2016/02/16/21/07/books-1204029_640.jpg");
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+}
+
+footer .container {
+  padding: 0;
+}
+
+footer .row > div {
+  margin-bottom: 1rem;
+}
+
+footer .col-md-4 {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  footer .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}

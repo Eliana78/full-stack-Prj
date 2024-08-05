@@ -1,0 +1,53 @@
+nav {
+  margin-bottom: 1.5rem;
+}
+.navbar li:hover {
+  border-bottom: 2px solid black;
+  font-size: larger;
+}
+
+h1 {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.contact-wrap h2 {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(184, 42, 7);
+}
+.contact-wrap {
+  background: #a3a2a22c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+}
+
+footer .container {
+  padding: 0;
+}
+
+footer .row > div {
+  margin-bottom: 1rem;
+}
+
+footer .col-md-4 {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  footer .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}

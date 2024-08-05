@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore</title>
+    <meta name="description" content="Bookstore" />
+    <link
+      rel="icon"
+      href="https://cdn.pixabay.com/photo/2018/07/01/20/01/music-3510326_640.jpg"
+    />
+    <link rel="stylesheet" href="styleBooksPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"
+                >Book<span id="homeSpan">Store</span></a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#abouUsid">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#contacid">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Admin</a>
+                  </li>
+                </ul>
+              
+            </div>
+          </nav>
+          
+    </header>
+
+    <main>
+      <!-- Sezione immagini hero -->
+      <h1 class="text-center my-4">
+        Discover Our <span class="wordSpan">Books</span>
+      </h1>
+      <section class="imgGrid">
+        <div class="container">
+          <div class="row">
+            <!-- Prima Riga -->
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/09/26/06/26/eyes-4505196_640.jpg"
+                alt="Immagine 1"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/29/02/56/blonde-1866951_640.jpg"
+                alt="Immagine 2"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/08/02/15/08/book-2572013_640.jpg"
+                alt="Immagine 4"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/06/07/16/50/woman-6318447_640.jpg"
+                alt="Immagine 3"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <!-- Seconda Riga -->
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/09/28/23/15/still-lifes-1701799_640.jpg"
+                alt="Immagine 5"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/11/19/22/24/watch-4638673_640.jpg"
+                alt="Immagine 6"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/05/13/14/52/boys-3396713_640.jpg"
+                alt="Immagine 7"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/29/09/31/woman-1868725_640.jpg"
+                alt="Immagine 8"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sezione ricerca -->
+      <section class="search my-4">
+        <div
+          class="container d-flex justify-content-center searchContainerBorder"
+        >
+          <div class="row justify-content-center">
+            <div
+              class="col-12 col-md-8 d-flex align-items-center justify-content-center"
+            >
+              <input
+                type="text"
+                id="search"
+                class="form-control me-2"
+                placeholder="Insert ID or Title - exact match"
+              />
+              <button type="button" id="searchButton" class="btn btn-dark ms-3">
+                Search
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--div risultato ricerca-->
+      <section>
+        <div class="container" id="foundedBook"></div>
+      </section>
+
+      <!-- Sezione categorie -->
+      <section class="category my-4">
+        <div class="container categoryContainerBorder">
+          <div class="row">
+            <div
+              class="col-6 col-md-2 mb-2 d-flex align-items-center justify-content-center"
+            >
+              <button type="button" class="btn btn-dark btnCategory" id="fantasy">
+                FANTASY
+              </button>
+            </div>
+            <div
+              class="col-6 col-md-2 mb-2 d-flex align-items-center justify-content-center"
+            >
+              <button type="button" class="btn btn-dark btnCategory" id="horror">
+                HORROR
+              </button>
+            </div>
+            <div
+              class="col-6 col-md-2 mb-2 d-flex align-items-center justify-content-center"
+            >
+              <button type="button" class="btn btn-dark btnCategory" id="romanzo">
+                ROMANZO
+              </button>
+            </div>
+            <div
+              class="col-6 col-md-2 mb-2 d-flex align-items-center justify-content-center"
+            >
+              <button type="button" class="btn btn-dark btnCategory" id="scienza">
+                SCIENZA
+              </button>
+            </div>
+            <div
+              class="col-6 col-md-2 mb-2 d-flex align-items-center justify-content-center"
+            >
+              <button type="button" class="btn btn-dark btnCategory" id="biografia">
+                BIOGRAFIA
+              </button>
+            </div>
+            <div
+              class="col-6 col-md-2 mb-2 d-flex align-items-center justify-content-center"
+            >
+              <button type="button" class="btn btn-dark btnCategory" id="storia">
+                STORIA
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!--risultti categoria-->
+<section>
+    <div class="row justify-content-center" id="resultCategoryBook"></div>
+</section>
+
+
+      <!-- Sezione tutti i libri -->
+      <section class="AllBooks my-4">
+        <h1 class="text-center">All Our <span class="wordSpan">Books</span></h1>
+        <div class="container">
+          <div class="row justify-content-center" id="divTuttiLibri">
+            <!-- Qui andrà il contenuto della sezione tutti i libri -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-3">
+            <h5>Contact Us</h5>
+            <p>
+              <strong>Address:</strong> 6 Bond St. New York, NY 10012, UNITED
+              STATES
+            </p>
+            <p>
+              <strong>Phone:</strong>
+              <a href="tel:11334455" class="text-white">11334455</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:Bookstore@gmail.com" class="text-white"
+                >Bookstore@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-2"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            ><br />
+            <a href="#" class="text-white me-2"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            ><br />
+            <a href="#" class="text-white"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </div>
+
+          <!-- Copyright -->
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <a href="index.html#topTripsDiv" class="text-white d-block"
+              >Top Books</a
+            >
+            <a href="index.html#abouUsid" class="text-white d-block"
+              >About Us</a
+            >
+            <a href="index.html#contacid" class="text-white d-block">Contact</a>
+            <a href="cart.html" class="text-white d-block">Cart</a>
+            <p class="mt-4 mb-0">&copy; 2024 Bookstore. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="BooksJs.js"></script>
+  </body>
+</html>
