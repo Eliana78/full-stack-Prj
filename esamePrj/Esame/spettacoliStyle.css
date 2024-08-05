@@ -1,0 +1,33 @@
+.navbar {
+  height: 10vh;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  transition: font-size 0.3s ease;
+}
+
+#hero {
+  background-image: url("https://cdn.pixabay.com/photo/2013/03/17/12/33/chicago-94510_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.pHero {
+  text-align: justify;
+}
+
+h1,
+h2 {
+  font-family: "Spectral SC", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: italic;
+}

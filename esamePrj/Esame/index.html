@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theatre</title>
+    <meta name="description" content="Theatre, book your shows" />
+    <link
+      rel="icon"
+      href="https://cdn.pixabay.com/photo/2018/02/12/22/37/mask-3149305_640.jpg"
+    />
+    <link rel="stylesheet" href="logincss.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Modal di Login -->
+
+    <!-- Modal di Login -->
+    <div id="popupbox">
+      <div class="modal-content">
+        <h2 class="modal-title">Login</h2>
+        <form id="loginForm">
+          <label for="clientCode" class="text-white mt-3 fs-2"
+            >Codice Cliente:</label
+          ><br />
+          <input type="text" id="clientCode" name="clientCode" required /><br />
+          <button type="submit">Submit</button>
+          <p id="errorMessage" class="error-message"></p>
+        </form>
+      </div>
+    </div>
+
+    <header>
+      <div id="pageContent" style="display: none">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Teatro</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="spettacoli.html"
+                  >Spettacoli</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Carrello</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin.html">Admin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--welcome section-->
+      <div class="container mt-5 mb-5 text-center welocmeSec">
+        <h1 class="mt-5 mb-2">Benvenuto <br />in un nuovo mondo</h1>
+        <p class="pWelcmeSection mt-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p class="pWelcmeSection">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet
+        </p>
+      </div>
+
+      <!-- Sezione immagini -->
+
+      <section class="imgGrid">
+        <div class="container">
+          <div class="row">
+            <!-- Prima Riga -->
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/09/14/22/47/chandelier-940307_640.jpg"
+                alt="Immagine 1"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/04/12/15/55/art-2224886_640.jpg"
+                alt="Immagine 2"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/02/17/08/04/cabaret-639110_640.jpg"
+                alt="Immagine 4"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/10/15/15/39/street-artist-489789_640.jpg"
+                alt="Immagine 3"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <!-- Seconda Riga -->
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/09/28/23/15/still-lifes-1701799_640.jpg"
+                alt="Immagine 5"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/02/11/14/58/microphone-3989881_640.jpg"
+                alt="Immagine 6"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/10/25/19/13/phantom-4577790_640.jpg"
+                alt="Immagine 7"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+              <img
+                src="https://cdn.pixabay.com/photo/2023/05/30/13/46/carnival-8028612_640.jpg"
+                alt="Immagine 8"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- history section-->
+      <section>
+        <div class="container mt-5 mb-5" id="divHistory">
+          <h1 class="mb-5 mt-5 text-center">La nostra storia</h1>
+          <div class="row align-items-center align-items-md-start">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <p class="pHero">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Molestiae dolores expedita earum, ut non enim et aut ab unde
+                repellat explicabo dolor magnam quo odio necessitatibus officiis
+                qui eligendi fuga.
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                sit impedit inventore rem in quasi itaque modi eos fugiat aut
+                quidem, ex illo perferendis vero deserunt mollitia doloremque
+                architecto soluta. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Delectus magni vero officia assumenda,
+                possimus minima labore aperiam? Quia, amet accusamus nam nostrum
+                voluptatum possimus saepe, modi exercitationem distinctio
+                corporis laudantium?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                alias esse blanditiis omnis odio! Natus nostrum magnam explicabo
+                omnis. Fugit, praesentium deserunt enim voluptatem similique
+                maiores ratione quas nam dolorem.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="https://cdn.pixabay.com/photo/2013/03/17/12/33/chicago-94510_640.jpg"
+                alt="image of a shoe"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--section actors-->
+      <div class="container">
+        <h1 class="text-center mt-5 mb-5">I nostri Attori</h1>
+      </div>
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/08/22/17/04/pantomime-2669717_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/06/20/17/45/like-5321848_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/03/13/16/29/berlin-4928453_640.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- top 4 shows section-->
+      <div class="container mt-5 mb-5 showDiv" id="TopShows">
+        <h1 class="mt-5 mb-5 text-center">I nostri teatri</h1>
+        <div class="row" id="topPicks"></div>
+      </div>
+
+      <!--Contact-->
+      <section class="ContactSec py-5 bg-black" id="contacid">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col-md-6 text-justify contacheadingDiv">
+              <h1 class="mb-5 text-white">Contatti</h1>
+              <p class="text-white">
+                <span class="contactSpan adress">Indirizzo:</span> piazza
+                Carignano, 6 Torino
+              </p>
+              <p class="text-white">
+                <span class="contactSpan">Telefono:</span>
+                <a href="tel:11334455" class="text-white">11334455</a>
+              </p>
+              <p class="text-white">
+                <span class="contactSpan">Email:</span>
+                <a href="mailto:Theatre@gmail.com" class="text-white"
+                  >Theatre@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="col-md-6 img-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5635.643764184483!2d7.685154900000001!3d45.0691242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d702759ca91%3A0x6e5f11e08671d2a5!2sPalazzo%20Carignano!5e0!3m2!1sen!2sit!4v1722461233112!5m2!1sen!2sit"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2017/08/02/13/09/confetti-2571539_640.jpg"
+          width="100%"
+        />
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-3">
+            <h5>Contact Us</h5>
+            <p><strong>Indirizzo:</strong> piazza Carignano, 6 Torino</p>
+            <p>
+              <strong>Telefono:</strong>
+              <a href="tel:11334455" class="text-white">11334455</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:Theatre@gmail.com" class="text-white"
+                >Theatre@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-2"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            ><br />
+            <a href="#" class="text-white me-2"
+              ><i class="fab fa-twitter"></i> Twitter</a
+            ><br />
+            <a href="#" class="text-white"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </div>
+
+          <!-- Copyright -->
+          <div class="col-md-4 mb-3">
+            <h5>Links</h5>
+            <a href="#TopShows" class="text-white d-block">i nostri teatri</a>
+            <a href="#divHistory" class="text-white d-block"
+              >La nostra storia</a
+            >
+            <a href="#contacid" class="text-white d-block">Contatti</a>
+            <p class="mt-4 mb-0">&copy; 2024 Thetare. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

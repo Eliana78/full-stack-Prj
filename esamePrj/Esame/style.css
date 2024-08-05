@@ -1,0 +1,96 @@
+.navbar {
+  height: 10vh;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f8f9fa;
+  font-size: 1.5rem;
+  transition: font-size 0.3s ease;
+}
+
+#hero {
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/30/16/32/ballerina-1873265_640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.pHero {
+  text-align: justify;
+}
+
+h1,
+h2 {
+  font-family: "Spectral SC", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.pWelcmeSection {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.imgGrid {
+  background-color: black;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  margin-top: 1.3rem;
+}
+
+.contactSpan {
+  color: rgb(180, 1, 1);
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.ContactSec a {
+  color: black;
+  text-decoration: none;
+}
+
+#carouselExampleInterval {
+  height: 600px;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  #hero {
+    height: 200px;
+  }
+  .hero-text {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

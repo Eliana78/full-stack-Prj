@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Impedisce lo scorrimento della pagina */
+  background-color: #f0f0f0; /* Colore di sfondo della pagina */
+}
+
+#popupbox {
+  display: flex; /* Mostra la modal immediatamente */
+  position: fixed;
+  z-index: 1000; /* Assicurati che la modal sia sopra gli altri contenuti */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Sfondo più scuro per maggiore contrasto */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #ffffff; /* Sfondo bianco per alta leggibilità */
+  padding: 40px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 400px; /* Dimensione maggiore */
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #333; /* Colore del testo per un buon contrasto */
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background-color: #007bff; /* Sfondo blu dietro il titolo */
+  color: #ffffff; /* Colore del testo del titolo */
+  padding: 10px; /* Spazio intorno al testo */
+  border-radius: 5px; /* Angoli arrotondati */
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  width: calc(100% - 22px); /* Adatta la larghezza degli input */
+  margin-bottom: 20px; /* Spazio sotto l'input */
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
